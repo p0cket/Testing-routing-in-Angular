@@ -30,5 +30,10 @@ var inBigText = angular
     $scope.postStatement = function(statement){
       fbStatements.$add(statement);
     }
+  }]);
 
-}]);
+  inBigText.controller('secondController', ['$scope', 'FURL', '$firebase', function($scope, FURL, $firebase) {
+
+        $scope.name = 'Second';
+
+  }]);
