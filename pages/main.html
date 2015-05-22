@@ -1,1 +1,15 @@
-<h1>this is main bitches</h1>
+<div>
+  <h1>Write things in big text</h1>
+    <form ng-submit="postStatement(statement)">
+      <input type="text" ng-model="statement.sentence">
+      <div id="bigtext"><p>{{statement.sentence}}</p></div>
+      <input type="submit" value="Post" class="btn btn-warning">
+    </form>
+  <!-- Have it display Posted content from firebase -->
+  <h2>Below are posted sentences:</h2>
+  <ul>
+    <li ng-repeat="statement in statements">
+      <h3>{{statement.sentence}}</h3>
+    </li>
+  </ul>
+</div>
